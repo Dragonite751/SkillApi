@@ -56,7 +56,7 @@ def jobrec(info: JobInfo):
     querystring = {"query": "{} in {}, {}".format(role, city, country), "page": "1", "num_pages": "10",
                    "employment_types": "{}".format(deg)}
     headers = {
-        "X-RapidAPI-Key": os.getenv("RAPIDAPI_KEY"),
+        "X-RapidAPI-Key": "a312d09bf1msh733c7a2bdd51d33p1e0d88jsn7dd4057091d7",
         "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
