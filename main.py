@@ -59,7 +59,7 @@ def jobrec(info: JobInfo):
         "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
-    # print(response)
+    print(response)
     if response.status_code != 200:
         raise HTTPException(status_code=response.status_code, detail="Error fetching job data")
     
