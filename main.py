@@ -46,6 +46,7 @@ def extract_skills(text):
 
 @app.post("/recommend_jobs/")
 def jobrec(info: JobInfo):
+    print("hello")
     extracted_main = extract_skills(info.restext)
     role = info.role
     city = info.city
